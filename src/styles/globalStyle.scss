@@ -30,6 +30,11 @@ body {
   color: var(--color);
 }
 
+strong {
+  font-weight: 500;
+  color: var(--color);
+}
+
 .light {
   --color: #272b33;
   --bg-color: #fff;

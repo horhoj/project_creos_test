@@ -2,5 +2,10 @@
   "hello": "Привет мир!",
   "lang": "РУС",
   "darkTheme": "Темная",
-  "lightTheme": "Светлая"
+  "lightTheme": "Светлая",
+  "Main_CommentTime_days": "Дней",
+  "Main_CommentTime_hours": "Часов",
+  "Main_CommentTime_minutes": "Минут",
+  "Main_LastComments_title": "Последние 10 комментариев",
+  "Main_LastComments_task": "Задача"
 }

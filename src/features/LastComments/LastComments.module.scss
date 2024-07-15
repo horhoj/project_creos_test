@@ -1,0 +1,62 @@
+.LastComments {
+  // border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title {}
+
+.list {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  cursor: pointer;
+  user-select: none;
+
+}
+
+.listDataElement {
+  padding: 5px 20px;
+}
+
+.listItemTextHidden {
+  &>div {
+    position: relative;
+    z-index: -1;
+  }
+
+  height: 70px;
+  background: linear-gradient(to top, var(--bg-color), transparent 100%, transparent 0%, var(--bg-color));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.listItemText {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.commentData {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
