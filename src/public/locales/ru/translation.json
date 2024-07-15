@@ -10,6 +10,9 @@
   "Main_LastComments_task": "Задача",
   "Main_TopDesigners_title": "Топ дизайнеров",
   "Main_TopDesigners_taskTimeLeft": "В среднем на задачу",
-  "Main_TopDesigners_taskCount": "Выполнено задач"
+  "Main_TopDesigners_taskCount": "Выполнено задач",
+  "Header_nav_designers": "Дизайнеры",
+  "Header_nav_main": "Главная",
+  "Header_nav_tasks": "Задачи"
 
 }

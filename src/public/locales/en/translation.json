@@ -10,5 +10,9 @@
   "Main_LastComments_task": "Task",
   "Main_TopDesigners_title": "Top designers",
   "Main_TopDesigners_taskTimeLeft": "Task time left",
-  "Main_TopDesigners_taskCount": "Task complete"
+  "Main_TopDesigners_taskCount": "Task complete",
+  "Header_nav_designers": "Designers",
+  "Header_nav_main": "Main",
+  "Header_nav_tasks": "Tasks"
+
 }

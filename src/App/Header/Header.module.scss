@@ -3,8 +3,31 @@
   display: flex;
   gap: 20px;
 
-  justify-content: flex-end;
+  justify-content: space-between;
 
   border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap-reverse;
 
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap-reverse;
+}
+
+.navLink {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: var(--bg-color);
+  // border: 1px solid var(--border-color);
+  color: var(--color);
+  text-decoration: none;
+}
+
+.navLinkActive {
+  font-weight: 600;
 }
