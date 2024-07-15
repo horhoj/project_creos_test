@@ -3,19 +3,19 @@ import { createSlice } from '@reduxjs/toolkit';
 const SLICE_NAME = 'settingsSlice';
 
 interface IS {
-  testParam: boolean;
+  isDark: boolean;
 }
 
 const initialState: IS = {
-  testParam: true,
+  isDark: true,
 };
 
 const { reducer, actions } = createSlice({
   name: SLICE_NAME,
   initialState,
   reducers: {
-    testParamToggle: (state) => {
-      state.testParam = !state.testParam;
+    isDarkToggle: (state) => {
+      state.isDark = !state.isDark;
     },
   },
 });

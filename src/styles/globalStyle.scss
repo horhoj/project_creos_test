@@ -26,8 +26,18 @@
 }
 
 body {
-  background-color: #272b33;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--color);
 }
 
+.light {
+  --color: #272b33;
+  --bg-color: #fff;
+  --border-color: #272b33;
+}
 
+.dark {
+  --color: #fff;
+  --bg-color: #272b33;
+  --border-color: #999;
+}

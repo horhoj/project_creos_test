@@ -12,8 +12,7 @@ const persistedReducer = persistReducer(
   {
     key: 'root',
     storage,
-    // whitelist: ['settings'],
-    whitelist: [],
+    whitelist: ['settings'],
   },
   reducers,
 );
