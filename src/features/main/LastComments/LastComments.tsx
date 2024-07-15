@@ -23,7 +23,7 @@ export function LastComments({ commentList }: LastCommentsProps) {
 
   return (
     <div className={styles.LastComments}>
-      <div>{t('Main_LastComments_title')}</div>
+      <div className={styles.title}>{t('Main_LastComments_title')}</div>
       <ul className={styles.list}>
         {commentList.map((comment) => (
           <li key={comment.id} className={styles.listItem} role={'button'} onClick={() => handleCOmmentClk(comment.id)}>

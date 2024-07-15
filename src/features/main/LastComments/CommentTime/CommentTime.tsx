@@ -50,6 +50,7 @@ export function CommentTime({ date }: CommentTimeProps) {
 
   const { t } = useAppTranslation();
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_, setRerenderCounter] = useState(0);
 
   useEffect(() => {
@@ -64,8 +65,7 @@ export function CommentTime({ date }: CommentTimeProps) {
 
   return (
     <span className={styles.CommentTime}>
-      {t('Main_CommentTime_days')}: {timeLeft?.d}, {t('Main_CommentTime_hours')}: {timeLeft?.h},{' '}
-      {t('Main_CommentTime_minutes')}: {timeLeft?.m}
+      {t('Main_days')}: {timeLeft?.d}, {t('Main_hours')}: {timeLeft?.h}, {t('Main_minutes')}: {timeLeft?.m}
     </span>
   );
 }

@@ -3,9 +3,13 @@
   "lang": "РУС",
   "darkTheme": "Темная",
   "lightTheme": "Светлая",
-  "Main_CommentTime_days": "Дней",
-  "Main_CommentTime_hours": "Часов",
-  "Main_CommentTime_minutes": "Минут",
+  "Main_days": "Дней",
+  "Main_hours": "Часов",
+  "Main_minutes": "Минут",
   "Main_LastComments_title": "Последние 10 комментариев",
-  "Main_LastComments_task": "Задача"
+  "Main_LastComments_task": "Задача",
+  "Main_TopDesigners_title": "Топ дизайнеров",
+  "Main_TopDesigners_taskTimeLeft": "В среднем на задачу",
+  "Main_TopDesigners_taskCount": "Выполнено задач"
+
 }

@@ -3,9 +3,12 @@
   "lang": "ENG",
   "darkTheme": "dark",
   "lightTheme": "light",
-  "Main_CommentTime_days": "Days",
-  "Main_CommentTime_hours": "Hours",
-  "Main_CommentTime_minutes": "Minutes",
+  "Main_days": "Days",
+  "Main_hours": "Hours",
+  "Main_minutes": "Minutes",
   "Main_LastComments_title": "Last 10 comments",
-  "Main_LastComments_task": "Task"
+  "Main_LastComments_task": "Task",
+  "Main_TopDesigners_title": "Top designers",
+  "Main_TopDesigners_taskTimeLeft": "Task time left",
+  "Main_TopDesigners_taskCount": "Task complete"
 }

@@ -1,0 +1,44 @@
+.TopDesigners {
+  padding: 10px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.list {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flexNoWrap  {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+}
