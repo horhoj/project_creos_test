@@ -13,6 +13,14 @@
   "Main_TopDesigners_taskCount": "Выполнено задач",
   "Header_nav_designers": "Дизайнеры",
   "Header_nav_main": "Главная",
-  "Header_nav_tasks": "Задачи"
+  "Header_nav_tasks": "Задачи",
+  "Designer_DesignerFilters_find": "Найти",
+  "Designer_DesignerFilters_reset": "Сбросить",
+  "Designer_DesignerFilters_status": "Статус",
+  "Designer_DesignerFilters_project": "Проект",
+  "Designer_DesignersTable_username_column_title": "Дизайнер",
+  "Designer_DesignersTable_email_column_title": "Почта",
+  "Designer_DesignersTable_openTasks_column_title": "Открытые задачи",
+  "Designer_DesignersTable_closedTasks_column_title": "Закрытые задачи"
 
 }

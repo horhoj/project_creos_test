@@ -4,10 +4,12 @@ import storage from 'redux-persist/lib/storage';
 import * as rp from 'redux-persist';
 import { settingsReducer } from './settingsSlice';
 import { mainReducer } from '~/features/main/mainSlice';
+import { designerReducer } from '~/features/designers/designerSlice';
 
 const reducers = combineReducers({
   settings: settingsReducer,
   main: mainReducer,
+  designer: designerReducer,
 });
 
 const persistedReducer = persistReducer(

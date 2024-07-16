@@ -1,4 +1,4 @@
-import styles from './TasksPage.module.scss';
+// import styles from './TasksPage.module.scss';
 import { DefaultLayout } from '~/ui/DefaultLayout';
 
 export function TasksPage() {

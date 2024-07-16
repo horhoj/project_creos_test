@@ -1,0 +1,14 @@
+.FormField {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  font-size: 14px;
+  background-color: var(--bg-color);
+  color: var(--color);
+  left: 10px;
+  top: -12px;
+  padding: 0 3px;
+  
+}

@@ -13,6 +13,14 @@
   "Main_TopDesigners_taskCount": "Task complete",
   "Header_nav_designers": "Designers",
   "Header_nav_main": "Main",
-  "Header_nav_tasks": "Tasks"
+  "Header_nav_tasks": "Tasks",
+  "Designer_DesignerFilters_find": "Find",
+  "Designer_DesignerFilters_reset": "Reset",
+  "Designer_DesignerFilters_status": "Status",
+  "Designer_DesignerFilters_project": "Project",
+  "Designer_DesignersTable_username_column_title": "Designer",
+  "Designer_DesignersTable_email_column_title": "Email",
+  "Designer_DesignersTable_openTasks_column_title": "Open tasks",
+  "Designer_DesignersTable_closedTasks_column_title": "Closed tasks"
 
 }

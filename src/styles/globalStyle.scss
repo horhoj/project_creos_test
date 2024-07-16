@@ -5,23 +5,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 * {
   &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
   }
 
   &::-webkit-scrollbar-track {
-    background: #ddd;
+    background: var(--scroll-color1);
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #999;
+    background-color: var(--scroll-color2);
     border-radius: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--scroll-color1);
   }
 }
 
@@ -39,10 +39,14 @@ strong {
   --color: #272b33;
   --bg-color: #fff;
   --border-color: #272b33;
+  --scroll-color1: #ddd;
+  --scroll-color2: #999;
 }
 
 .dark {
   --color: #fff;
   --bg-color: #272b33;
   --border-color: #999;
+  --scroll-color1: #272b33;
+  --scroll-color2: #444;
 }
