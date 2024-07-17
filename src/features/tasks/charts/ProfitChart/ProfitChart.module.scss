@@ -1,0 +1,37 @@
+.ProfitChart {
+  padding: 20px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customTooltipWrapper {
+  background-color: var(--bg-color);
+  color: var(--color);
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.chartWrapper {
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.chart {
+  min-width: 700px;
+}

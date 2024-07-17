@@ -25,6 +25,11 @@
   "Tasks_StatusChart_title": "Статистика по задачам",
   "Tasks_StatusChart_taskNew": "Новые",
   "Tasks_StatusChart_taskDone": "Выполнено",
-  "Tasks_StatusChart_taskInProgress": "В процессе"
+  "Tasks_StatusChart_taskInProgress": "В процессе",
+  "Tasks_ProfitChart_legend_income": "Выручка",
+  "Tasks_ProfitChart_legend_profit": "Прибыль",
+  "Tasks_ProfitChart_legend_expenses": "Расходы",
+  "Tasks_ProfitChart_week": "Неделя",
+  "Tasks_ProfitChart_title": "Финансы по неделям"
 
 }

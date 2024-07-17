@@ -9,12 +9,16 @@ export interface SelectOption {
 }
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   options: SelectOption[];
+  isEmptyValue?: boolean;
 }
-export const Select = forwardRef<HTMLSelectElement, SelectProps>(({ options, ...props }, ref) => {
-  const optionList = useMemo(
-    () => [{ value: '', label: '', id: getUUID() }, ...options.map((el) => ({ ...el, id: getUUID() }))],
-    [options],
-  );
+export const Select = forwardRef<HTMLSelectElement, SelectProps>(({ isEmptyValue = true, options, ...props }, ref) => {
+  const optionList = useMemo(() => {
+    if (isEmptyValue) {
+      return [{ value: '', label: '', id: getUUID() }, ...options.map((el) => ({ ...el, id: getUUID() }))];
+    }
+
+    return options.map((el) => ({ ...el, id: getUUID() }));
+  }, [options, isEmptyValue]);
   return (
     <select {...props} ref={ref} className={styles.Select}>
       {optionList.map((option) => (

@@ -25,6 +25,12 @@
   "Tasks_StatusChart_title": "Task statistics",
   "Tasks_StatusChart_taskNew": "New",
   "Tasks_StatusChart_taskDone": "Done",
-  "Tasks_StatusChart_taskInProgress": "In progress"
+  "Tasks_StatusChart_taskInProgress": "In progress",
+  "Tasks_ProfitChart_legend_income": "Income",
+  "Tasks_ProfitChart_legend_profit": "Profit",
+  "Tasks_ProfitChart_legend_expenses": "Expenses",
+  "Tasks_ProfitChart_week": "Week",
+  "Tasks_ProfitChart_title": "Finance by week"
+
 
 }
