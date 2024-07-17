@@ -14,6 +14,7 @@
   "Header_nav_designers": "Designers",
   "Header_nav_main": "Main",
   "Header_nav_tasks": "Tasks",
+  "Header_current_work_week_label": "Current work week",
   "Designer_DesignerFilters_find": "Find",
   "Designer_DesignerFilters_reset": "Reset",
   "Designer_DesignerFilters_status": "Status",
@@ -31,6 +32,4 @@
   "Tasks_ProfitChart_legend_expenses": "Expenses",
   "Tasks_ProfitChart_week": "Week",
   "Tasks_ProfitChart_title": "Finance by week"
-
-
 }
