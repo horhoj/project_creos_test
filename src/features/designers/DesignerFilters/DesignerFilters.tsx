@@ -20,15 +20,18 @@ export function DesignerFilters({ projectList, onSubmit, onReset, disabled }: De
     [projectList],
   );
 
+  const { t } = useAppTranslation();
+
   const StatusSelectOptions: SelectOption[] = useMemo<SelectOption[]>(
     () => [
-      { value: FetchDesignerResponseResultItemIssueStatus.Done, label: 'Выполнено' },
-      { value: FetchDesignerResponseResultItemIssueStatus.InProgress, label: 'В процессе' },
+      { value: FetchDesignerResponseResultItemIssueStatus.Done, label: t('Designer_DesignersTable_taskDone') },
+      {
+        value: FetchDesignerResponseResultItemIssueStatus.InProgress,
+        label: t('Designer_DesignersTable_taskInProgress'),
+      },
     ],
-    [],
+    [t],
   );
-
-  const { t } = useAppTranslation();
 
   const [project, setProject] = useState('');
   const [status, setStatus] = useState('');
