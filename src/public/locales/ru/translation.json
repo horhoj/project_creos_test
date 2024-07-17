@@ -21,6 +21,10 @@
   "Designer_DesignersTable_username_column_title": "Дизайнер",
   "Designer_DesignersTable_email_column_title": "Почта",
   "Designer_DesignersTable_openTasks_column_title": "Открытые задачи",
-  "Designer_DesignersTable_closedTasks_column_title": "Закрытые задачи"
+  "Designer_DesignersTable_closedTasks_column_title": "Закрытые задачи",
+  "Tasks_StatusChart_title": "Статистика по задачам",
+  "Tasks_StatusChart_taskNew": "Новые",
+  "Tasks_StatusChart_taskDone": "Выполнено",
+  "Tasks_StatusChart_taskInProgress": "В процессе"
 
 }

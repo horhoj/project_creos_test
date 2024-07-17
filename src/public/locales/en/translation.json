@@ -21,6 +21,10 @@
   "Designer_DesignersTable_username_column_title": "Designer",
   "Designer_DesignersTable_email_column_title": "Email",
   "Designer_DesignersTable_openTasks_column_title": "Open tasks",
-  "Designer_DesignersTable_closedTasks_column_title": "Closed tasks"
+  "Designer_DesignersTable_closedTasks_column_title": "Closed tasks",
+  "Tasks_StatusChart_title": "Task statistics",
+  "Tasks_StatusChart_taskNew": "New",
+  "Tasks_StatusChart_taskDone": "Done",
+  "Tasks_StatusChart_taskInProgress": "In progress"
 
 }
