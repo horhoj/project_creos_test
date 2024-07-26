@@ -7,6 +7,7 @@ import { IssueResponseItem, IssueStatus } from '~/api/issues.types';
 import { makeRequestExtraReducer, makeRequestStateProperty, RequestList, RequestStateProperty } from '~/store/helpers';
 import { RootState } from '~/store/types';
 import { getUUID } from '~/utils/getUUID';
+import { getCurrentWorkWeek } from '~/utils/getCurrentWorkWeek';
 
 const SLICE_NAME = 'tasks';
 
@@ -90,9 +91,9 @@ export const tasksSliceProfitSelector = createSelector(
     if (issues === null) {
       return null;
     }
-
-    const startOfWorkWeek = (date: string | Date | number) => addHours(startOfISOWeek(date), HOURS_OFFSET_FOR_WORKWEEK);
-    const endOfWorkWeek = (date: string | Date | number) => addHours(endOfISOWeek(date), HOURS_OFFSET_FOR_WORKWEEK);
+    const currentWorkWeek = getCurrentWorkWeek();
+    const startOfWorkWeek = (date: string | Date | number) => startOfISOWeek(date);
+    const endOfWorkWeek = (date: string | Date | number) => endOfISOWeek(date);
 
     const makeDateHash = (date: string | Date | number) =>
       `${startOfWorkWeek(date).toISOString()}___${endOfWorkWeek(date).toISOString()}`;
@@ -101,7 +102,12 @@ export const tasksSliceProfitSelector = createSelector(
 
     for (const issue of issues) {
       if (issue.status === IssueStatus.Done && issue.date_finished !== null) {
-        const dateHash = makeDateHash(issue.date_finished);
+        const workDateFinished = addHours(
+          issue.date_finished,
+          HOURS_OFFSET_FOR_WORKWEEK + new Date().getTimezoneOffset() / 60,
+        );
+        const dateHash = makeDateHash(workDateFinished);
+
         if (!ms[dateHash]) {
           ms[dateHash] = {
             id: getUUID(),
@@ -109,8 +115,8 @@ export const tasksSliceProfitSelector = createSelector(
             income: 0,
             profit: 0,
             issueCount: 0,
-            startOfWeek: startOfWorkWeek(issue.date_finished).toISOString(),
-            endOfWeek: endOfWorkWeek(issue.date_finished).toISOString(),
+            startOfWeek: startOfWorkWeek(workDateFinished).toISOString(),
+            endOfWeek: endOfWorkWeek(workDateFinished).toISOString(),
             name: '0',
           };
         }
@@ -128,9 +134,10 @@ export const tasksSliceProfitSelector = createSelector(
 
     for (let i = 1; i <= weekCount; i++) {
       const currentDateHash = makeDateHash(bufferDate);
+      const name = (currentWorkWeek - i + 1).toString();
 
       if (ms[currentDateHash]) {
-        result.unshift({ ...ms[currentDateHash], name: i.toString() });
+        result.unshift({ ...ms[currentDateHash], name });
       } else {
         result.unshift({
           id: getUUID(),
@@ -140,7 +147,7 @@ export const tasksSliceProfitSelector = createSelector(
           issueCount: 0,
           startOfWeek: startOfWorkWeek(bufferDate).toISOString(),
           endOfWeek: endOfWorkWeek(bufferDate).toISOString(),
-          name: i.toString(),
+          name,
         });
       }
 

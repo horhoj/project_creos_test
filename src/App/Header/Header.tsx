@@ -1,17 +1,15 @@
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
-import { getISOWeek } from 'date-fns';
 import { LangWidget } from '../LangWidget';
 import { ThemeWidget } from '../ThemeWidget';
 import styles from './Header.module.scss';
 import { routes } from '~/router/routes';
 import { useAppTranslation } from '~/i18n/useAppTranslation';
-
-const HOURS_OFFSET_FOR_WORKWEEK = -11;
+import { getCurrentWorkWeek } from '~/utils/getCurrentWorkWeek';
 
 export function Header() {
   const { t } = useAppTranslation();
-  const currentWorkWeek = getISOWeek(new Date().getTime() - HOURS_OFFSET_FOR_WORKWEEK * 3600 * 1000);
+  const currentWorkWeek = getCurrentWorkWeek();
 
   return (
     <>
